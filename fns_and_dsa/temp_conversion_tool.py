@@ -14,7 +14,7 @@ def main():
     try:
         temperature = float(input('Enter the temperature to convert: '))
 
-        choice = input("Is this temperature in Celcius or Fahrenheit? (C/F): ")
+        choice = input("Is this temperature in Celcius or Fahrenheit? (C/F):")
 
         if choice == 'C':
             print(f"{temperature}°C is {convert_to_fahrenheit(temperature)}°F")
