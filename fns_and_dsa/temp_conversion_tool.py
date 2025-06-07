@@ -23,7 +23,7 @@ def main():
         else:
             print("Invalid choice")
     except ValueError:
-        raise ValueError("Invalid temperature. Please enter a numeric value")
+        raise ValueError("Invalid temperature. Please enter a numeric value.")
     
 if __name__ == '__main__':
     main()
