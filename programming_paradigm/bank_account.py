@@ -4,13 +4,15 @@ class BankAccount:
         self.initial_balance = 0
 
     # Deposit into account
-    def deposit(self, account_balance, amount):
-        return account_balance + amount 
+    def deposit(self, amount):
+        self.account_balance = self.account_balance + amount 
+        return self.account_balance
 
     # Withdraw from account
-    def withdraw(self, account_balance, amount):
-        return account_balance - amount
+    def withdraw(self, amount):
+        self.account_balance = self.account_balance - amount
+        return self.account_balance
 
     # Display account balance
-    def display_balance(self, account_balance):
-        return account_balance
+    def display_balance(self):
+        print(f"Current Balance: ${self._account_balance}")
