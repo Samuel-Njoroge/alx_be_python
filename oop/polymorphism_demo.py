@@ -1,14 +1,11 @@
-from math import pi 
+from math import pi
 
 class Shape:
     def __init__(self):
         pass
 
     def area(self):
-        try:
-            print(self.area())
-        except:
-            raise NotImplementedError
+        raise NotImplementedError("Subclasses must be implemented")
         
 class Rectangle(Shape):
     def __init__(self, length, width):
@@ -25,5 +22,5 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return pi ** self.radius
+        return pi * (self.radius ** 2)
     
